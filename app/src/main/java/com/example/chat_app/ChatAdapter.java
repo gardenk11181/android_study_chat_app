@@ -80,4 +80,9 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder>{
     public ChatData getChat(int position) {
         return mDataset == null? null : mDataset.get(position);
     }
+
+    public void addChat(ChatData chat) {
+        mDataset.add(chat);
+        notifyItemInserted(mDataset.size()-1); // 데이터 추가
+    }
 }
