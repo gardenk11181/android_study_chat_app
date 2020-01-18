@@ -64,8 +64,10 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder>{
 
         if(chat.getNickname().equals(this.myNickName)) {
             holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
         } else {
             holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+            holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
         }
     }
 
